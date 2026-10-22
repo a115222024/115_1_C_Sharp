@@ -1,0 +1,152 @@
+﻿namespace Sale_Price_Calculator
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 設計工具所需的元件容器。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 釋放表單使用的資源。
+        /// </summary>
+        /// <param name="disposing">如果為 true，則一併釋放受控資源。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 初始化表單上的所有元件與版面配置。
+        /// 請勿使用程式碼編輯器修改此方法的內容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.originalPriceTextBox = new System.Windows.Forms.TextBox();
+            this.discountPercentageTextBox = new System.Windows.Forms.TextBox();
+            this.originalPricePromptLabel = new System.Windows.Forms.Label();
+            this.discPercentagePromptLabel = new System.Windows.Forms.Label();
+            this.outputDescriptionLabel = new System.Windows.Forms.Label();
+            this.salePriceLabel = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // 商品原價輸入框
+            // 
+            this.originalPriceTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.originalPriceTextBox.Location = new System.Drawing.Point(300, 30);
+            this.originalPriceTextBox.Name = "originalPriceTextBox";
+            this.originalPriceTextBox.Size = new System.Drawing.Size(300, 38);
+            this.originalPriceTextBox.TabIndex = 0;
+            // 
+            // 折扣百分比輸入框
+            // 
+            this.discountPercentageTextBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.discountPercentageTextBox.Location = new System.Drawing.Point(300, 100);
+            this.discountPercentageTextBox.Name = "discountPercentageTextBox";
+            this.discountPercentageTextBox.Size = new System.Drawing.Size(300, 38);
+            this.discountPercentageTextBox.TabIndex = 1;
+            // 
+            // 商品原價提示標籤
+            // 
+            this.originalPricePromptLabel.AutoSize = true;
+            this.originalPricePromptLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.originalPricePromptLabel.Location = new System.Drawing.Point(30, 35);
+            this.originalPricePromptLabel.Name = "originalPricePromptLabel";
+            this.originalPricePromptLabel.Size = new System.Drawing.Size(232, 32);
+            this.originalPricePromptLabel.TabIndex = 2;
+            this.originalPricePromptLabel.Text = "商品原價：";
+            // 
+            // 折扣百分比提示標籤
+            // 
+            this.discPercentagePromptLabel.AutoSize = true;
+            this.discPercentagePromptLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.discPercentagePromptLabel.Location = new System.Drawing.Point(30, 105);
+            this.discPercentagePromptLabel.Name = "discPercentagePromptLabel";
+            this.discPercentagePromptLabel.Size = new System.Drawing.Size(232, 32);
+            this.discPercentagePromptLabel.TabIndex = 3;
+            this.discPercentagePromptLabel.Text = "折扣百分比：";
+            // 
+            // 售價說明標籤
+            // 
+            this.outputDescriptionLabel.AutoSize = true;
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(30, 175);
+            this.outputDescriptionLabel.Name = "outputDescriptionLabel";
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(112, 32);
+            this.outputDescriptionLabel.TabIndex = 4;
+            this.outputDescriptionLabel.Text = "售價：";
+            // 
+            // 售價輸出標籤
+            // 
+            this.salePriceLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.salePriceLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.salePriceLabel.Location = new System.Drawing.Point(300, 165);
+            this.salePriceLabel.Name = "salePriceLabel";
+            this.salePriceLabel.Size = new System.Drawing.Size(300, 48);
+            this.salePriceLabel.TabIndex = 5;
+            this.salePriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // 計算售價按鈕
+            // 
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.calculateButton.Location = new System.Drawing.Point(180, 255);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(180, 55);
+            this.calculateButton.TabIndex = 6;
+            this.calculateButton.Text = "計算售價";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            // 
+            // 離開按鈕
+            // 
+            this.exitButton.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.exitButton.Location = new System.Drawing.Point(390, 255);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(120, 55);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.Text = "離開";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // 主表單
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(660, 360);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.salePriceLabel);
+            this.Controls.Add(this.outputDescriptionLabel);
+            this.Controls.Add(this.discPercentagePromptLabel);
+            this.Controls.Add(this.originalPricePromptLabel);
+            this.Controls.Add(this.discountPercentageTextBox);
+            this.Controls.Add(this.originalPriceTextBox);
+            this.Name = "Form1";
+            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.Text = "售價計算器";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox originalPriceTextBox;
+        private System.Windows.Forms.TextBox discountPercentageTextBox;
+        private System.Windows.Forms.Label originalPricePromptLabel;
+        private System.Windows.Forms.Label discPercentagePromptLabel;
+        private System.Windows.Forms.Label outputDescriptionLabel;
+        private System.Windows.Forms.Label salePriceLabel;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitButton;
+    }
+}
+
